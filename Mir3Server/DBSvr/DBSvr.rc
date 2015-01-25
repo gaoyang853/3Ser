@@ -1,0 +1,193 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// 中文(中华人民共和国) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
+#pragma code_page(936)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDB_TOOLBAR             BITMAP                  ".\\Res\\toolbar.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDI_MIR2                ICON                    ".\\Res\\MIR2.ICO"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MAINMENU MENU 
+BEGIN
+    POPUP "&Service"
+    BEGIN
+        MENUITEM "&Start Service",              IDM_STARTSERVICE
+        MENUITEM "S&top Service",               IDM_STOPSERVICE, GRAYED
+        MENUITEM SEPARATOR
+        MENUITEM "&Configuration",              IDM_CONFIG
+        MENUITEM SEPARATOR
+        MENUITEM "E&xit",                       IDM_EXIT
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_CONFIGDLG DIALOG  0, 0, 187, 143
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+CAPTION "Database Server Configuration"
+FONT 9, "??"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,71,122,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,130,122,50,14
+    CONTROL         "IPAddress1",IDC_DBMS_IP,"SysIPAddress32",WS_TABSTOP,65,29,90,11
+    EDITTEXT        IDC_DBMS_PORT,65,43,28,12,ES_AUTOHSCROLL | ES_NUMBER
+    LTEXT           "Address :",-1,29,31,35,8
+    GROUPBOX        "DBMS Information",-1,15,15,158,83
+    LTEXT           "Instance :",-1,28,45,34,9
+    LTEXT           "ID : ",-1,30,81,14,8
+    EDITTEXT        IDC_DBMS_ID,46,78,28,14,ES_AUTOHSCROLL
+    LTEXT           "Password :",-1,82,81,38,8
+    EDITTEXT        IDC_DBMS_PASSWORD,123,78,40,14,ES_PASSWORD | ES_AUTOHSCROLL
+    LTEXT           "Database :",-1,25,60,36,8
+    EDITTEXT        IDC_DBMS_DEVICE,65,58,82,14,ES_AUTOHSCROLL
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_CONFIGDLG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 180
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 136
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE 
+BEGIN
+    IDS_NOTWINNT            "必须在 Microsoft Windows 2000 以上系统中运行."
+    IDS_LVS_LABEL1          "日期"
+    IDS_LVS_LABEL2          "时间"
+    IDS_LVS_LABEL3          "信息"
+    IDS_STARTSERVICE        "启动数据库服务器服务"
+    IDS_STOPSERVICE         "停止数据库服务器服务"
+    IDS_CONNECT_LOGINSERVER "登陆服务器连接"
+    IDS_DISCONNECT_LOGINSERVER "登陆服务器连接断开"
+    IDS_PROGRAM_QUIT        "程序退出?"
+    IDS_PROGRAM_TITLE       "传奇3 - 数据库服务器"
+    IDS_CANT_CONNECT        "登陆服务器无法连接。10秒后尝试重新连接。"
+    IDS_CONFLVS_LABEL1      "服务器名"
+    IDS_CONFLVS_LABEL2      "标题"
+    IDS_CONFLVS_LABEL3      "登录内部IP地址"
+    IDS_CONFLVS_LABEL4      "登录外部IP地址"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_CONFLVS_LABEL5      "游戏外部IP地址"
+    IDS_TAB_LABEL1          "服务器配置"
+    IDS_ACCEPT_GATESERVER   "游戏服务器(%s)连接"
+    IDS_OPEN_USER           "客户端(%s)尝试连接"
+    IDS_CLOSE_USER          "客户端(%s)连接关闭"
+    IDS_CONNECTDB           "传奇3数据库连接"
+    IDS_LOADACCOUNTRECORDS  "加载用户帐户信息记录"
+    IDS_BOUNDACCOUNTRECORDS "%d个用户帐户信息记录读出"
+    IDS_COMPLETENEWUSER     "用户ID创建[%s]"
+END
+
+#endif    // 中文(中华人民共和国) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// 朝鲜语 resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_KOR)
+#ifdef _WIN32
+LANGUAGE LANG_KOREAN, SUBLANG_DEFAULT
+#pragma code_page(949)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+#endif    // 朝鲜语 resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
